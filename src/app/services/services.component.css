@@ -1,0 +1,40 @@
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  /* background-color: #ffd803; */
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffd803;
+  opacity: 0.8;
+}
+
+.btn:focus {
+  outline: none;
+}

@@ -28,6 +28,7 @@ body {
 }
 
 .content h1 {
+  color: #272343;
   margin: 0;
 }
 
@@ -37,6 +38,6 @@ body {
 }
 
 .content p {
-  color: #333;
+  color: #2d334a;
   line-height: 1.5;
 }

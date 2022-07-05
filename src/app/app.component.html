@@ -1,52 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Rotating Navigation</title>
-  </head>
-  <body>
-    <div class="container" [ngClass]="isNavExpanded ? 'show-nav' : ''">
-      <div class="circle-container">
-        <div class="circle">
-          <button id="close" (click)="toggleNav(false)">
-            <i class="fas fa-times"> </i>
-          </button>
-          <button id="open" (click)="toggleNav(true)">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-      <div class="content">
-        <router-outlet></router-outlet>
-      </div>
+<div class="container" [ngClass]="isNavExpanded ? 'show-nav' : ''">
+  <div class="circle-container">
+    <div class="circle">
+      <button id="close" (click)="toggleNav(false)">
+        <i class="fas fa-times"> </i>
+      </button>
+      <button id="open" (click)="toggleNav(true)">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a routerLink="/" (click)="toggleNav(false)"
-            ><i class="fas fa-home"></i>Naslovna</a
-          >
-        </li>
-        <li>
-          <a routerLink="/usluge" (click)="toggleNav(false)"
-            ><i class="fas fa-user-alt"></i>Usluge</a
-          >
-        </li>
-        <li>
-          <a routerLink="/kontakt" (click)="toggleNav(false)">
-            <i class="fas fa-envelope"></i>Kontakt</a
-          >
-        </li>
-      </ul>
-    </nav>
-  </body>
-</html>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/" (click)="toggleNav(false)"
+        ><i class="fas fa-home"></i>Naslovna</a
+      >
+    </li>
+    <li>
+      <a routerLink="/usluge" (click)="toggleNav(false)"
+        ><i class="fas fa-user-alt"></i>Usluge</a
+      >
+    </li>
+    <li>
+      <a routerLink="/kontakt" (click)="toggleNav(false)">
+        <i class="fas fa-envelope"></i>Kontakt</a
+      >
+    </li>
+  </ul>
+</nav>

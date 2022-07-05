@@ -1,5 +1,5 @@
 .container {
-  background-color: #fafafa;
+  background-color: #fffffe;
   transform-origin: top left;
   transition: transform 0.5s ease-out;
   width: 100vw;
@@ -18,7 +18,7 @@
 }
 
 .circle {
-  background-color: #40b3ff;
+  background-color: #ffd803;
   height: 200px;
   width: 200px;
   border-radius: 50%;
