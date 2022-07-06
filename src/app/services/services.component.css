@@ -22,8 +22,9 @@ img {
 
 .btn {
   /* background-color: #ffd803; */
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
+  border-radius: 2px;
   padding: 0.5rem;
   cursor: pointer;
   width: 49.5%;

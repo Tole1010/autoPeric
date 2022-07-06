@@ -1,7 +1,7 @@
 .container {
   /* background-color: #fffffe; */
-  background-color: #e9ecc5;
-  background-image: linear-gradient(167deg, #e9ecc5 0%, #dfdfdf 100%);
+  background-color: #ffe9be;
+  background-image: linear-gradient(110deg, #8cd2e2, #0090c0);
 
   transform-origin: top left;
   transition: transform 0.5s ease-out;
