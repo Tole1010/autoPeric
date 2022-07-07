@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sora&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,8 +10,14 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  background-color: #333;
+  font-family: "Sora", sans-serif;
+  /* background-color: #333; */
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("./assets/images/parts.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #222;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -40,8 +46,17 @@ body {
 .content p {
   color: #2d334a;
   line-height: 1.5;
-  font-size: large;
-  font-weight: 500;
+  font-size: larger;
+  font-weight: 600;
+  /* background-color: #ffe02fce; */
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 5px;
+  padding: 2px 7px;
 }
 
 hr {

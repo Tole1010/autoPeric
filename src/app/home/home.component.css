@@ -21,9 +21,9 @@ h1 .logoImg {
 }
 
 .homeImg {
-  -moz-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.7);
-  -webkit-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.7);
-  box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.7);
+  -moz-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.5);
+  -webkit-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.5);
+  box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.5);
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
