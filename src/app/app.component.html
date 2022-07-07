@@ -16,17 +16,28 @@
 <nav>
   <ul>
     <li>
-      <a routerLink="/" (click)="toggleNav(false)"
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="toggleNav(false)"
         ><i class="fas fa-home"></i>Naslovna</a
       >
     </li>
     <li>
-      <a routerLink="/usluge" (click)="toggleNav(false)"
+      <a
+        routerLink="/usluge"
+        routerLinkActive="active"
+        (click)="toggleNav(false)"
         ><i class="fas fa-car"></i>Usluge</a
       >
     </li>
     <li>
-      <a routerLink="/kontakt" (click)="toggleNav(false)">
+      <a
+        routerLink="/kontakt"
+        routerLinkActive="active"
+        (click)="toggleNav(false)"
+      >
         <i class="fas fa-envelope"></i>Kontakt</a
       >
     </li>

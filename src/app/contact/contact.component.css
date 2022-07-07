@@ -51,11 +51,13 @@ small {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
   color: white;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, text-decoration-color 0.3s ease-in-out;
 }
 
 a:hover {
   color: black;
+  text-decoration-color: black;
 }

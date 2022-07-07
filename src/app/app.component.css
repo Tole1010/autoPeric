@@ -105,6 +105,21 @@ nav {
   z-index: 100;
 }
 
+nav a {
+  text-decoration: underline !important;
+  text-decoration-color: transparent !important;
+  transition: color 0.2s ease-in-out, text-decoration-color 0.3s ease-in-out;
+}
+
+nav a.active {
+  color: #ffd803 !important;
+}
+
+nav a:hover {
+  color: #ffd803 !important;
+  text-decoration-color: #ffd803 !important;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

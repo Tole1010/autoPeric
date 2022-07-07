@@ -14,10 +14,13 @@ h1 .logoImg {
   box-shadow: 10px 10px 5px #ccc;
   border-radius: 5px;
   margin: 10px; */
+  opacity: 0;
   -webkit-filter: drop-shadow(5px 5px 5px #666666);
   filter: drop-shadow(5px 5px 5px #666666);
   animation-name: bounceIn;
   animation-duration: 1.3s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
 }
 
 .homeImg {
@@ -33,6 +36,7 @@ h1 .logoImg {
 @keyframes bounceIn {
   0% {
     transform: translateX(-100vw) rotate(-15deg);
+    opacity: 1;
   }
   80% {
     transform: translateX(5%) rotate(5deg);
@@ -42,5 +46,6 @@ h1 .logoImg {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
