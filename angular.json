@@ -24,7 +24,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "https://tole1010.github.io/autoPeric/"
           },
           "configurations": {
             "production": {
