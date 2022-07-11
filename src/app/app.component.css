@@ -61,6 +61,10 @@
   transform-origin: top left;
 }
 
+nav {
+  pointer-events: none;
+}
+
 nav ul {
   list-style-type: none;
   padding-left: 30px;
@@ -72,6 +76,7 @@ nav ul li {
   margin: 40px 0;
   transform: translateX(-150%);
   transition: transform 0.4s ease-in;
+  pointer-events: all;
 }
 
 nav ul li a {
