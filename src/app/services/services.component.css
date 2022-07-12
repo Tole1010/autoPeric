@@ -4,6 +4,7 @@
   overflow: hidden;
   margin-top: 20px;
   border-radius: 20px;
+  position: relative;
 }
 
 img {
@@ -18,12 +19,48 @@ img {
 }
 
 .buttons-container {
+  position: absolute;
+  z-index: 98;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  transform: translateY(-50%);
+  justify-content: space-between;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: x-large;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffd803;
+  opacity: 0.8;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+/* .buttons-container {
   display: flex;
   justify-content: space-between;
 }
 
 .btn {
-  /* background-color: #ffd803; */
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 2px;
@@ -40,4 +77,4 @@ img {
 
 .btn:focus {
   outline: none;
-}
+} */
