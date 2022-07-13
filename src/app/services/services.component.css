@@ -1,9 +1,15 @@
+h1 {
+  margin-left: 15%;
+}
+
 .carousel {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   width: 100%;
   overflow: hidden;
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 20px;
+  position: relative;
 }
 
 img {
@@ -16,14 +22,61 @@ img {
   transition: transform 0.5s ease-in-out;
   position: relative;
 }
-
 .buttons-container {
+  position: absolute;
+  z-index: 98;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  transform: translateY(-50%);
+  justify-content: space-between;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: x-large;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+p i {
+  color: #ffd803;
+  margin-right: 12px;
+}
+p {
+  margin: 0;
+  margin-top: 15px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    background-color: #ffd803;
+    opacity: 0.8;
+  }
+}
+
+/* .buttons-container {
   display: flex;
   justify-content: space-between;
 }
 
 .btn {
-  /* background-color: #ffd803; */
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 2px;
@@ -40,4 +93,4 @@ img {
 
 .btn:focus {
   outline: none;
-}
+} */

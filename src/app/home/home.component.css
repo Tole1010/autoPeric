@@ -4,6 +4,7 @@ h1 {
   align-items: center;
   padding: 10px;
   margin-bottom: 10px;
+  height: 300px;
 }
 
 h1 .logoImg {
@@ -15,22 +16,43 @@ h1 .logoImg {
   border-radius: 5px;
   margin: 10px; */
   opacity: 0;
-  -webkit-filter: drop-shadow(5px 5px 5px #666666);
-  filter: drop-shadow(5px 5px 5px #666666);
+  /* -webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666); */
   animation-name: bounceIn;
   animation-duration: 1.3s;
   animation-delay: 0.8s;
   animation-fill-mode: forwards;
+  width: 250px;
+  height: 100px;
+}
+
+h2 {
+  font-family: "Indie Flower", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-align: center;
+  animation: blur 2.1s ease-in;
+  -webkit-animation: blur 2.1s ease-in;
+  /* animation-fill-mode: forwards; */
 }
 
 .homeImg {
-  -moz-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.5);
+  /* -moz-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.5);
   -webkit-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.5);
   box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.5);
   -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
+  -webkit-border-radius: 25px; */
   border-radius: 25px;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+hr {
+  /* -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.1); */
+  width: 90%;
+  opacity: 0.5;
 }
 
 @keyframes bounceIn {
@@ -47,5 +69,25 @@ h1 .logoImg {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes blur {
+  0% {
+    color: transparent;
+    filter: blur(20px);
+  }
+  100% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes blur {
+  0% {
+    color: transparent;
+    filter: blur(20px);
+  }
+  100% {
+    color: white;
   }
 }

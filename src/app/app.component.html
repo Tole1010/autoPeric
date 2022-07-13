@@ -9,6 +9,13 @@
       </button>
     </div>
   </div>
+  <button
+    *ngIf="!router.isActive('/kontakt', true)"
+    class="contact-btn"
+    routerLink="/kontakt"
+  >
+    <i class="fa-solid fa-phone"></i>
+  </button>
   <div class="content">
     <router-outlet></router-outlet>
   </div>
