@@ -1,24 +1,13 @@
 <h1>Usluge</h1>
 <hr />
-<p>
-  Održavamo i servisiramo veliki broj osobnih vozila te vozila privatnih i
-  javnih poduzeća. Poslujemo sa vodećim osiguravajućim i leasing kućama u
-  Hrvatskoj te omogućavamo direktnu naplatu od osiguravajuće kuće.
-</p>
-<hr />
-<!-- <p>
-  Nalazimo se na jednoj od četiri glavne prometnice u Dubravi i posjedujemo
-  servisno prodajni prostor od 375 m2, termolakirnicu od 250 m2 te skladišno
-  kancelarijski prostor od 150 m2.
-</p> -->
-
 <div class="carousel">
   <div
     class="image-container"
     id="imgs"
     [style.transform]="'translateX(' + -idx * 100 + '%)'"
   >
-    <img
+    <img [src]="img.src" [alt]="img.naziv" *ngFor="let img of imgsArray" />
+    <!-- <img
       src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
       alt="first-image"
     />
@@ -33,7 +22,7 @@
     <img
       src="https://images.unsplash.com/photo-1504222490345-c075b6008014?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="fourth-image"
-    />
+    /> -->
   </div>
   <div class="buttons-container">
     <button id="left" class="btn" (click)="previousImage()">
@@ -44,3 +33,28 @@
     </button>
   </div>
 </div>
+
+<!-- <ul>
+  <li>Servisiranje</li>
+  <li>Održavanje</li>
+  <li>Termolakiranje</li>
+  <li>Osiguranje i leasing vozila</li>
+</ul> -->
+
+<!-- <p>
+  Nalazimo se na jednoj od četiri glavne prometnice u Dubravi i posjedujemo
+  servisno prodajni prostor od 375 m2, termolakirnicu od 250 m2 te skladišno
+  kancelarijski prostor od 150 m2.
+</p> -->
+<p>
+  <i class="fa-solid fa-arrow-right"></i> Održavamo i servisiramo veliki broj
+  osobnih vozila te vozila privatnih i javnih poduzeća.
+</p>
+<p>
+  <i class="fa-solid fa-arrow-right"></i> Nudimo usluge termolakiranja vozila
+</p>
+<p>
+  <i class="fa-solid fa-arrow-right"></i> Poslujemo sa vodećim osiguravajućim i
+  leasing kućama u Hrvatskoj te nudimo mogućnost direktne naplate od
+  osiguravajuće kuće.
+</p>
