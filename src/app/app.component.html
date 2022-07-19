@@ -33,10 +33,18 @@
     </li>
     <li>
       <a
+        routerLink="/onama"
+        routerLinkActive="active"
+        (click)="toggleNav(false)"
+        ><i class="fas fa-car"></i>O nama</a
+      >
+    </li>
+    <li>
+      <a
         routerLink="/usluge"
         routerLinkActive="active"
         (click)="toggleNav(false)"
-        ><i class="fas fa-car"></i>Usluge</a
+        ><i class="fas fa-wrench"></i>Usluge</a
       >
     </li>
     <li>
