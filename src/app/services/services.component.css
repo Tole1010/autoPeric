@@ -34,14 +34,7 @@ img {
 }
 
 .btn {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding: 2rem;
+  padding: 1.8rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: x-large;
@@ -61,7 +54,11 @@ p i {
 }
 p {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 10px;
+}
+
+.spaceBeforeLast {
+  height: 30px;
 }
 
 @media (hover: hover) and (pointer: fine) {
