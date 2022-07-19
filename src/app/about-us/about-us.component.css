@@ -1,9 +1,26 @@
-p {
+div.paragraphContainer {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+.paragraphIcon {
+  position: absolute;
+  top: 5%;
+  z-index: 0;
+}
+
+.paragraphIcon i {
+  color: #ffd803;
+  font-size: 50px;
+  /* transform: translate(50%, -50%); */
 }
 
 /* p:nth-child(odd) {
@@ -14,11 +31,21 @@ p:nth-child(even) {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 } */
 
-p:nth-child(odd) {
-  box-shadow: rgba(0, 0, 0, 0.15) -2.4px 2.4px 3.2px;
+div.paragraphContainer:nth-child(odd) {
+  box-shadow: rgba(0, 0, 0, 0.15) -7px 7px 10px;
 }
 
-p:nth-child(even) {
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  text-align: end;
+div.paragraphContainer:nth-child(even) {
+  box-shadow: rgba(0, 0, 0, 0.15) 7px 7px 10px;
+}
+
+div.paragraphContainer:nth-child(odd) .paragraphIcon {
+  left: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+div.paragraphContainer:nth-child(even) .paragraphIcon {
+  right: 0;
+  transform: translate(50%, -50%);
 }
